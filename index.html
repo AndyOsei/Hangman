@@ -7,8 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hangman</title>
 
+    <!-- font awesome -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Own style -->
+    <link href="assets/css/app.css" rel="stylesheet">
+
+    <script type="text/javascript" charset="utf-8" src="assets/js/ondomready.js"></script>
+    <script>
+        onDomReady(function() {
+            console.log('ready');
+        });
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,10 +32,33 @@
 </head>
 
 <body>
-    <h1>Hello, Hangman</h1>
+
+    <div class="container">
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <span>Welcome to Hangman</span>
+                <a href="#">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i> Single Player (Timed)
+                </a>
+                <a href="#">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i> Single Player (Untimed)
+                </a>
+            </div>
+
+        </div>
+
+    </div>
 
 
     <script type="text/javascript" src="assets/js/bootstrap-native.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="assets/js/ondomready.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>
