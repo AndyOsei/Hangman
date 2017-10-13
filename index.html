@@ -33,6 +33,18 @@
 
 <body>
 
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Hg</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <div class="container">
         <!-- The overlay -->
         <div id="myNav" class="overlay">
@@ -50,7 +62,38 @@
                     <i class="fa fa-location-arrow" aria-hidden="true"></i> Single Player (Untimed)
                 </a>
             </div>
+        </div>
 
+        <div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="timer">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div id="buttons">
+                        </div>
+                        <p id="catagoryName"></p>
+                        <div id="hold">
+                        </div>
+                        <p id="mylives"></p>
+                        <p id="clue">Clue -</p>
+                        <div style="display:inline-block;width:auto; margin-bottom: 10px; position:relative; box-shadow: 0 5px 50px">
+                            <canvas id="stickman">
+                                This Text will show if the Browser does NOT support HTML5 Canvas tag
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <button id="hint">Hint</button>
+                        <button id="reset">Play again</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
