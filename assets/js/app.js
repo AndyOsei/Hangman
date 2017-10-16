@@ -13,6 +13,20 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+/**
+ * switch to single player mode (timed or untimed)
+ */
+
+document.getElementById('single-player-timed').addEventListener('click', function(event) {
+    event.preventDefault();
+    closeNav();
+});
+
+document.getElementById('single-player-untimed').addEventListener('click', function(event) {
+    event.preventDefault();
+    closeNav();
+});
+
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
     'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
     't', 'u', 'v', 'w', 'x', 'y', 'z'
@@ -205,7 +219,6 @@ play = function() {
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
     word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
     word = word.replace(/\s/g, "-");
-    //console.log(word);
     buttons();
 
     geusses = [];
